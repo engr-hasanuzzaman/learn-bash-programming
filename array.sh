@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # this script contain operation on array
-# declare array using  with space delimeter string
+# declare array using () with space delimeter string
 NAMES=(sumon salma santo shila sumi)
 AGES=(29 27 17 13 31)
 
@@ -13,7 +13,7 @@ echo "the value of array AGES is ${AGES[@]}"
 echo "size of array NAMES is ${#NAMES[@]}"
 echo "size of array AGES IS ${#AGES[@]}"
 
-# access array element using \[\]
+# access array element using []
 NAMES[0]='new first element'
 echo "first element of array NAMES is ${NAMES[0]}"
 echo "last element of array AGES is ${AGES[${#AGES[@]}-1]}"
