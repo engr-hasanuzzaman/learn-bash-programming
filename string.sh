@@ -31,3 +31,11 @@ echo $FIRSTNAME
 # Replace first occurrence of substring with replacement
 STRING="to be or not to be"
 echo ${STRING[@]/be/eat}        # to eat or not to be
+
+# Replace all occurrence of substring with replacement
+STRING="to be or not to be"
+echo ${STRING[@]//be/eat}        # to eat or not to be
+
+# Replace first occurrence of substring with replacement if first string is to
+STRING="to be or not to be"
+echo ${STRING[@]/#to be/sumon eat}        # to eat or not to be
