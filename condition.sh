@@ -11,3 +11,10 @@ elif [ "$NAME" = 'salma' ]; then
 else
   echo "why you are calling me $NAME"
 fi 
+
+AGE=20
+case $AGE in
+	50) echo "you are fifty now";;
+	40) echo "you are forty now";;
+	20) echo "you are twenty now";;
+esac
