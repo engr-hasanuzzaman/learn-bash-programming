@@ -11,3 +11,13 @@ elif [ "$NAME" = 'salma' ]; then
 else
   echo "why you are calling me $NAME"
 fi 
+
+# numerical number comparison using -gt, -lt, -ne, -le, -ge, -eq
+FIRST_NUMBER=10
+SECOND_NUMBER=12
+
+if [ $FIRST_NUMBER -le 5 ]; then
+  echo "number $FIRST_NUMBE is < 5"
+elif [ $FIRST_NUMBER -ge 10 ]; then
+  echo "number $FIRST_NUMBE is >= 10"
+fi
